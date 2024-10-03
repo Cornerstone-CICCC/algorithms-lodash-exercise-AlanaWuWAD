@@ -4,6 +4,10 @@ const _ = require('lodash');
 
 const numbers = [1, 2, 3, 4];
 
-// your code here
+const product = _.reduce(numbers, (sum, n) =>  sum = sum*n,1)
 
 console.log(product); // Expected output: 24
+
+// _.reduce([1, 2], function(sum, n) {
+//     return sum + n;
+//   }, 0);
